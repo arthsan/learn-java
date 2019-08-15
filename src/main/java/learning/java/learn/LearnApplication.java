@@ -44,6 +44,12 @@ public class LearnApplication {
 			System.out.println("Você perdeu!");
 		}
 
+		switch (myName) {
+			case "Tomás": System.out.println("1"); break;
+			case "Arthur": System.out.println("2"); break;
+			default: System.out.println("Write a name");
+		}
+
 	}
 
 }
