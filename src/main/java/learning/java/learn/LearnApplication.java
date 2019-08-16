@@ -3,6 +3,8 @@ package learning.java.learn;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Random;
 
 @SpringBootApplication
@@ -48,6 +50,40 @@ public class LearnApplication {
 			case "Tomás": System.out.println("1"); break;
 			case "Arthur": System.out.println("2"); break;
 			default: System.out.println("Write a name");
+		}
+
+		int[] nums;
+		nums = new int[5];
+		nums[0] = 8;
+		System.out.println(nums.length);
+
+		String[][] cities = {
+				{"São Paulo", "Recife", "Rio"},
+				{"Miami", "New York", "Orlando"}
+		};
+
+		int counter = 0;
+
+		for (int i = 0; i < cities.length; i += 1) {
+			for (int j = 0; j < cities[i].length; j += 1) {
+				counter += 1;
+				if (cities[i][j] == "New York") {
+					System.out.println("Here there is: " + counter);
+					break;
+				}
+			}
+		}
+
+		System.out.println(Arrays.toString(cities[0]));
+
+		for (int i = 0; i < myName.length(); i += 1) {
+			if (i == 3) {
+				char x = myName.charAt(i);
+				String msg = Character.toString(x);
+				String Msg = msg.toUpperCase();
+				String newName = myName.replace(msg, Msg);
+				System.out.println(newName);
+			}
 		}
 
 	}

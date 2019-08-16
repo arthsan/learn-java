@@ -14,6 +14,7 @@ public class JoKenPo {
         int p1 = dice.nextInt(3);
         int p2 = dice.nextInt(3);
 
+        // Player 1
         if (p1 == 0) {
             System.out.println("Player 1 = " + "Rock");
         } else if (p1 == 1) {
@@ -22,6 +23,7 @@ public class JoKenPo {
             System.out.println("Player 1 = " + "Paper");
         }
 
+        // Player 2
         if (p2 == 0) {
             System.out.println("Player 2 = " + "Rock");
         } else if (p2 == 1) {
@@ -30,6 +32,7 @@ public class JoKenPo {
             System.out.println("Player 2 = " + "Paper");
         }
 
+        // Play
         if (p1 == p2) {
             System.out.println("Draw");
         } else if ((p1 == 0 && p2 == 1) || (p1 == 1 && p2 == 2) || (p1 == 2 && p2 == 0)) {
