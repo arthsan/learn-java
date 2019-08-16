@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -85,6 +86,17 @@ public class LearnApplication {
 				System.out.println(newName);
 			}
 		}
+
+		ArrayList<String> countries = new ArrayList<String>();
+
+		countries.add("Brazil");
+		countries.add("USA");
+		countries.add("Italy");
+		countries.add(1, "Equator");
+
+		System.out.println(countries.get(0));
+		countries.remove(0);
+		System.out.println(countries);
 
 	}
 
